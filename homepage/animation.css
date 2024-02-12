@@ -1,0 +1,118 @@
+@keyframes entry{
+    0%{
+        opacity: 0;
+        transform: translateX(30%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes entry2{
+    0%{
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes entry3{
+    0%{
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes exit{
+    0%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(30%);
+    }
+}
+
+@keyframes exit2{
+    0%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(30%);
+    }
+}
+
+@keyframes exit3{
+    0%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+}
+.ent1{
+    opacity: 0;
+    animation-name: entry;
+    animation-duration: .7s;
+    animation-delay: 0;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+.ent2{
+    opacity: 0;
+    animation-name: entry2;
+    animation-duration: .7s;
+    animation-delay: .3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+.ent3{
+    opacity: 0;
+    animation-name: entry3;
+    animation-duration: 1s;
+    animation-delay: .6s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+.ext1{
+    animation-name: exit;
+    animation-duration: .7s;
+    animation-delay: 0;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.ext2{
+    animation-name: exit2;
+    animation-duration: .7s;
+    animation-delay: .3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.ext3{
+    animation-name: exit3;
+    animation-duration: .7s;
+    animation-delay: .6s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}

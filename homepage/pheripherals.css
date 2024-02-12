@@ -1,0 +1,389 @@
+.logo{
+    height: 30px;
+    width: 30px;
+    background-image: url('calculus.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.halfs
+{
+    display: flex;
+    align-items: center;
+    width:50%;
+    height: 100%;
+    padding: 0 10px;
+    column-gap: 20px;
+}
+.subContainer.firstHalf {
+    justify-content: flex-start;
+}
+.subContainer.secondHalf {
+    justify-content: flex-end;
+}
+.subContainer{
+    width: 100%;
+    height: fit-content;
+    min-height: 400px;
+    /* max-height: 600px; */
+    background-color: #000;
+    box-shadow: 20px -10px 20px 20px #000 inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+#one{
+    background-image: url('./onebg.jpg');
+    padding-top: 5px;
+}
+#two{
+    background-image: url('./twobg.jpg');
+    padding-right:10px;
+    align-items: center;
+    position: relative;
+    row-gap: 20px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+#two .tabs{
+    width: 100%;
+    background: rgba(47, 79, 79, 0.367);
+    z-index: 20;
+    padding:20px 10px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    border-radius: 20px;
+}
+#two .tab1
+{
+    height: 300px;
+    width: 100%;
+    max-height: 400px;
+    max-width: 800px;
+    background-image: url(./code.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    box-shadow:10px 10px 10px #000;
+    border-radius: 10px;
+    border: 2px solid darkslategrey;
+}
+#two .tab2{
+    min-height: 300px;
+    min-width: 300px;
+    background-image: url(./math.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    box-shadow:10px 10px 10px #000;
+    border-radius: 10px;
+    border: 2px solid darkslategrey;
+
+}
+#two .text{
+    max-width: 800px;
+}
+#two p{
+    color: darkslategrey;
+    padding-left: 10px;
+}
+#two h2{
+    text-align: center;
+    color: rgb(124,144,255);
+    margin-bottom: 5px;
+    font-family: tahoma ,sans serif;
+    font-size: 1.2rem;
+    line-height: 35px;
+    font-weight: 300;
+    font-style: italic;
+}
+#three
+{
+    justify-content: center;
+    padding: 0 10px;
+    padding-left: 80px;
+    row-gap: 20px;
+    /* min-height: 1000px; */
+}
+#three h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    padding-left: 50px;
+    color: rgb(82,141,160);
+}
+#three span
+{
+    font-size: 50px;
+    font-style:italic;
+    color: rgb(82,141,160);
+}
+#three ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+    background: rgba(82, 140, 160, 0.367);
+    padding: 20px 10px;
+    position: relative;
+    box-shadow:10px 10px 10px #000000aa;
+    border-radius: inherit;
+}
+#three .contain{
+    z-index: 50;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: rgba(47, 79, 79, 0.367);
+    z-index: 20;
+}
+#three .auxDesign
+{
+    height: 300px;
+    max-width: 400px;
+    width: 100%;
+    background-image: url(./calcSave.jpg);
+    border-radius: inherit;
+    border: 2px solid rgba(82, 140, 160, 0.367);
+    box-shadow:10px 10px 10px #000000aa;
+}
+#three ul li{
+    padding: 15px 5px ;
+    background: darkslategrey;
+    width: fit-content;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.attach
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all linear 2s;
+}
+.attach .line{
+    height: 3px;
+    width: 50px;
+    background: rgba(82, 140, 160);
+}
+.attach .bulb{
+    min-height: 20px;
+    min-width: 20px;
+    background: darkslategrey;
+    border-radius: 50%;
+}
+.attach .in1{
+    left: 0;
+}
+.attach .in2{
+    right: 0;
+}
+
+.searchBar
+{
+    min-height: 35px;
+    width: 100%;
+    padding: 2px;
+    position: relative;
+}
+.searchIcon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    height: 20px;
+    width: 20px;
+}
+.searchBar input{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(40, 48, 65,.9);
+    padding-left: 40px;
+    border: 1px solid grey;
+}
+.searchBar input::placeholder{
+    font-size: 17px;
+    color: #fff;
+}
+.secondHalf .searchBar, .subNav .searchBar{
+    background-color: rgb(40, 48, 65,.9);
+    border-radius: 5px;
+}
+.secondHalf .searchBar::after, .subNav .searchBar::after{
+    content: "search or jump to...";
+    position: absolute;
+    top: 0;
+    left: 40px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    opacity: .9;
+    cursor: pointer;
+}
+.logBtn{
+    min-width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 2px;
+    min-height: 50px;
+}
+.signUp{
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-weight: 900;
+}
+.signUp:hover{
+    background-color: #fff;
+}
+.signUp:hover p{
+    color: #000;
+}
+.svgIcons{
+    cursor: pointer;
+    transition: all linear .5s;
+}
+.auxSearchCont{
+    background: #ffffff3d;
+    padding-top: 10px;
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    display: none;
+}
+.auxSearch
+{
+    width: 80%;
+    background: #fff;
+    height: fit-content;
+    padding:20px 10px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    /* display: none; */
+}
+.auxSearch input{
+    background: transparent;
+    border: 1px solid grey;
+    color: #000;
+    text-transform: capitalize;
+}
+.auxSearch input:focus{
+    border: 2px solid blue;
+}
+.auxSearch .searchBar
+{
+    height: 40px;
+}
+.menu
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    display: none;
+}
+.menu:active{
+    transform: translateY(-50%) scale(1.1);
+}
+.exit{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    background: #fff;
+}
+.bulbing
+{
+    transition: all linear 2s;
+}
+.bulbing svg{
+    z-index: 30;
+}
+.rad{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 20;
+}
+.ignition{
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    top: 100%;
+    opacity: .3;
+    border-radius: 50%;
+    box-shadow: 0 0 150px 80px rgb(113, 63, 200),
+                0 0 5px rgb(113, 63, 200) inset;
+    z-index: 10;
+}
+
+@media screen and (max-width:900px) {
+    .subContainer .secondHalf, nav .navProp{
+        display: none;
+    }
+    .subContainer .firstHalf{
+        width: 100%;
+    }
+    .menu{
+        display: block;
+    }
+    #two .tab2{
+        display: none;
+    }
+    #three .contain{        
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #three .attach{
+        flex-direction: column;
+    }
+    .attach .line{
+        width: 3px;
+        height: 50px;
+        background: rgba(82, 140, 160);
+    }
+}
+@media screen and (max-width:800px)
+{
+    .contents .holdContents,.contents .conSignUpParent{
+        flex-direction: column;
+        /* max-width: 600px;    */
+    }
+    .contents .holdContents .line
+    {
+        height: 1px;
+        width: 100%;
+    }
+    .contents .holdContents button{
+        width: 100%;
+    }
+    .contents .conSignUpParent input,.contents .conSignUpParent div{
+        width: 100%;
+        border-radius: 8px;
+    }
+    .contents h1{
+        font-size: 2.5rem;
+    }
+}
